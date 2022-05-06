@@ -12,6 +12,11 @@ body{
     font-family: sans-serif;
 }
 
+.grid{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
 .nav, .menu{
     display: flex;
     flex-direction: row;
@@ -31,4 +36,31 @@ body{
 
 .nav .logo {
     font-size: 2rem;
+}
+
+.hero {
+    background-color: rgb(209, 209, 209);
+    border-radius: .6rem;
+}
+
+.h1box{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1box h1{
+    text-align: center;
+    font-size: 3.45rem;
+    font-weight: 600;
+}
+
+.btn{
+    max-width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: .3rem;
+    background-color: #9f9f9f;
 }

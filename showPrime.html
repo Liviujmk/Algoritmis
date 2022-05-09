@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <h1 >Welcome to prime finder</h1>
+    </div>
+    <div class="flex">
+        <label for="input">Enter a number</label>
+        <input type="text" name="" id="number">
+        <br>
+        <br>
+        <button id="btn"><span>Find</span></button>
+    </div>
+    <div class="flex final">
+        <p id="find-result"></p>
+    </div>
+
+
+    <script>
+        const pf = document.getElementById('find-result');
+        const btn = document.getElementById('btn');
+        let divs = []
+        function prime(n){
+            let ok = 0;
+            let num = n;
+            for(let i = 2; i <= num/2; i++){
+                if(num%i == 0){
+                    ok = 1;
+                    break;
+                }
+            }
+            if(ok === 0) return 1
+            return 0
+        }
+        btn.addEventListener('click',()=>{
+            const input = document.getElementById('number').value;
+            console.log(prime(input))
+            if(prime(input) === 1){
+                pf.innerHTML = `The number ${input} is prime`;
+            }else{
+                pf.innerHTML = `The number ${input} is not prime`;
+            }
+        })
+        
+    </script>
+</body>
+</html>

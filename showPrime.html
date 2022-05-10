@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="prj">
+            <h1>Bine ati venit la programul de verificare prim</h1>
+            <label for="input">Introduceti un numar </label>
+            <input type="text" name="" id="number">
+            <br>
+            <br>
+            <button id="btn"><span>Afla</span></button>
+            <p id="find-result"></p>
+        </div>
+    </div>
+
+    <script>
+        const pf = document.getElementById('find-result');
+        const btn = document.getElementById('btn');
+        let divs = []
+        function prime(n){
+            let ok = 0;
+            let num = n;
+            for(let i = 2; i <= num/2; i++){
+                if(num%i == 0){
+                    ok = 1;
+                    break;
+                }
+            }
+            if(ok === 0) return 1
+            return 0
+        }
+        btn.addEventListener('click',()=>{
+            const input = document.getElementById('number').value;
+            console.log(prime(input))
+            if(prime(input) === 1){
+                pf.innerHTML = `Numarul ${input} este prim`;
+            }else{
+                pf.innerHTML = `Numarul ${input} nu este prim`;
+            }
+        })
+        
+    </script>
+</body>
+</html>

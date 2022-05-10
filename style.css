@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nav, .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.nav {
+    padding: 1.5rem;
+}
+
+.menu {
+    gap: 4rem;
+}
+
+.nav .logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: rgb(209, 209, 209);
+    border-radius: .6rem;
+}
+
+.h1box{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1box h1{
+    text-align: center;
+    font-size: 3.45rem;
+    font-weight: 600;
+}
+
+.btn{
+    max-width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: .3rem;
+    background-color: #9f9f9f;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover{
+    background-color: rgb(153, 153, 153);
+}
+
+.btn:focus, button:focus{
+    border: 1px solid #888888;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-container div {
+    width: 50%;
+}
+
+.project-container.second {
+    flex-direction: row-reverse;
+}
+
+.project-content {
+    padding: 3rem;
+}
+
+.project-content h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    word-wrap: normal;
+    margin: 0;
+    padding-bottom: 1rem;
+    color: rgb(26, 24, 24);
+    line-height: 3rem;
+}
+
+.project-content p{
+    font-size: 1rem;
+    margin: 0;
+    color: #696969;
+    padding-bottom: 1rem;
+}
+
+.project-content button{
+    max-width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: .2rem;
+    background-color: #9f9f9f;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+button:focus{
+    border: 1px solid #888888;
+}
+
+.project-image {
+    padding: 2rem;
+    background-color: #e2e2e2;
+    border-radius: .6rem;
+}
+
+.project-image img{
+    width: 100%;
+    height: auto;
+    border-radius: .6rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prj{
+    display: block;
+    flex-direction: column;
+    font-size: 1.43rem;
+}

@@ -77,7 +77,7 @@ section {
     font-weight: 600;
 }
 
-.btn, #id{
+.btn, #btn{
     max-width: 200px;
     padding: 12px 15px;
     font-size: 18px;

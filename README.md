@@ -1,4 +1,4 @@
-# This is a high-school project
+# This is a project made in high school, and recently I did some UI improvements!
 
 ## See it live now !!
 

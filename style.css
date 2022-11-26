@@ -14,9 +14,21 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #00216a;
+}
+
 .grid{
     margin-right: 2rem;
     margin-left: 2rem;
+}
+
+.projects.grid {
+    background: black;
+    padding: 3rem;
+    border-radius: 30px;
 }
 
 section {
@@ -49,10 +61,11 @@ section {
 .hero {
     background-color: rgb(209, 209, 209);
     border-radius: .6rem;
+    margin-bottom: 5rem;
 }
 
 .h1box{
-    padding: 1.5rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,12 +77,12 @@ section {
     font-weight: 600;
 }
 
-.btn{
+.btn, #id{
     max-width: 200px;
-    padding: 10px;
-    font-size: 20px;
+    padding: 12px 15px;
+    font-size: 18px;
     border: none;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     background-color: #9f9f9f;
     transition: all .3s ease;
     cursor: pointer;
@@ -110,26 +123,27 @@ section {
     word-wrap: normal;
     margin: 0;
     padding-bottom: 1rem;
-    color: rgb(26, 24, 24);
+    color: #fff;
     line-height: 3rem;
 }
 
 .project-content p{
     font-size: 1rem;
     margin: 0;
-    color: #696969;
+    color: #c8c8c8;
     padding-bottom: 1rem;
 }
 
 .project-content button{
     max-width: 200px;
-    padding: 10px;
-    font-size: 18px;
+    padding: 12px 15px;
+    font-size: 17px;
     border: none;
-    border-radius: .2rem;
-    background-color: #9f9f9f;
+    border-radius: 0.2rem;
+    background-color: #191463;
     transition: all .3s ease;
     cursor: pointer;
+    color: #fff;
 }
 
 button:hover{
@@ -141,8 +155,8 @@ button:focus{
 }
 
 .project-image {
-    padding: 2rem;
-    background-color: #e2e2e2;
+    padding: 3.3rem;
+    background-color: #ffffff;
     border-radius: .6rem;
 }
 
